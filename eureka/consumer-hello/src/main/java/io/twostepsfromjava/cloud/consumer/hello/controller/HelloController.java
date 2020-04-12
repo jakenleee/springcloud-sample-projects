@@ -61,4 +61,12 @@ public class HelloController {
         logger.info("Target service uri = {}. ", helloUri.toString());
         return this.lbcRestTemplate.getForEntity(helloUri, String.class).getBody();
     }
+
+    public static void main(String[] args) {
+        String sb ="admin-php-lizj.jpg";
+        System.out.println(sb.substring(sb.indexOf("-",sb.indexOf("php")) + 1, sb.lastIndexOf(".")));
+
+    }
+
+
 }
